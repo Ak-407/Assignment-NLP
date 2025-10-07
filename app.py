@@ -19,6 +19,9 @@ import openai
 
 openai.api_key = OPENAI_API_KEY
 
+
+# remove the Dummy Numpy array as i was not having credit left in my open api -(Uncomment the get_embedding function below and remove the other get_embedding function) 
+# to use open api key uncomment this-->
 # def get_embedding(text):
 #     response = co.embed(
 #         texts=[text],  
@@ -30,6 +33,8 @@ openai.api_key = OPENAI_API_KEY
 
 
 
+
+# remove this dummy when you will put open api key in Config file
 # Dummy function (same as vector_setup)
 def get_embedding(text):
     return np.array(np.random.rand(1536))
